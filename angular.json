@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "msnPlatziPre": {
+    "msnSchedulePre": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/msnPlatziPre",
+            "outputPath": "dist/msnSchedulePre",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/styles.css"
             ],
@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "msnPlatziPre:build"
+            "browserTarget": "msnSchedulePre:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "msnPlatziPre:build:production"
+              "browserTarget": "msnSchedulePre:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "msnPlatziPre:build"
+            "browserTarget": "msnSchedulePre:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "msnPlatziPre-e2e": {
+    "msnSchedulePre-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -105,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "msnPlatziPre:serve"
+            "devServerTarget": "msnSchedulePre:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "msnPlatziPre:serve:production"
+              "devServerTarget": "msnSchedulePre:serve:production"
             }
           }
         },
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "msnPlatziPre"
+  "defaultProject": "msnSchedulePre"
 }
